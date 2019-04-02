@@ -107,22 +107,24 @@ module TabulaSettings
   if ENV['RACK_ENV'] == 'production'
     MONGODB_ENDPOINT = '54.183.42.219'
     MONGODB_PORT = '27017'
-    DB_USER = 'smeuser'
-    DB_PASSWORD = 'al+erna+e'
+    DATABASE = 'xml-extractor'
+    DB_USER = 'testuser'
+    DB_PASSWORD = 'amadeus'
 
   elsif ENV['RACK_ENV'] == 'development'
     MONGODB_ENDPOINT = '127.0.0.1'
     # MONGODB_ENDPOINT = '54.183.136.45'
     MONGODB_PORT = '27017'
-    OCR_PORT = '8888'
-    DB_USER = 'smeuser'
-    DB_PASSWORD = 'Al+erna+e'
+    DATABASE = 'xml-extractor'
+    DB_USER = 'testuser'
+    DB_PASSWORD = 'amadeus'
 
   else ENV['RACK_ENV'] == 'local'
     MONGODB_ENDPOINT = '127.0.0.1'
     MONGODB_PORT = '27017'
-    DB_USER = 'smeuser'
-    DB_PASSWORD = 'Al+erna+e'
+    DATABASE = 'xml-extractor'
+    DB_USER = 'testuser'
+    DB_PASSWORD = 'amadeus'
   end
 
   puts "ROOT_DIR = #{ROOT_DIR}"

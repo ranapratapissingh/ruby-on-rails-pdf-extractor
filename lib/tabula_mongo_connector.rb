@@ -9,7 +9,8 @@ module TabulaMongo
                            user: TabulaSettings::DB_USER,
                            password: TabulaSettings::DB_PASSWORD)
 
-        @db = Mongo::Database.new(@client, :smeocr)
+        @db = Mongo::Database.new(@client, TabulaSettings::DATABASE)
+        # @db = Mongo::Database.new(@client, :xml-extractor)
       end
 
       def insert(collection_name, documents)
