@@ -23,5 +23,5 @@ RUN bundle install --system
 RUN jruby -S jbundle install
 ADD . /usr/src/app
 
-EXPOSE 9292
+EXPOSE 9000
 CMD ["jruby", "-G", "-r", "jbundler", "-S", "rackup", "-o", "0.0.0.0"]
