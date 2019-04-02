@@ -66,24 +66,24 @@ a Java Runtime Environment compatible with Java 7 (i.e. Java 7, 8 or higher).
     RACK_ENV=production jruby -G -r jbundler -S -o 127.0.0.1 rackup -p 9000
 
 **After server start, you will see all details on console:**
-    ~~~
-    ROOT_DIR = /home/yourusername/Projects/xml-extractor
-    DATA_DIR = /home/yourusername/Projects/xml-extractor/webapp/upload
-    DOCUMENTS_BASEPATH = /home/yourusername/Projects/xml-extractor/webapp/upload/pdfs
-    ENABLE_DEBUG_METHODS = true
-    DOCUMENTS_RELATIVEPATH = webapp/upload/pdfs
-    DOCUMENTS_OUTPUTPATH = webapp/static/export
-    MONGO ENDPOINT = 127.0.0.1:27017
-    running under / as root URI
-    Puma starting in single mode...
-    * Version 3.12.0 (jruby 9.2.0.0 - ruby 2.5.0), codename: Llamas in Pajamas
-    * Min threads: 0, max threads: 16
-    * Environment: development
-    * Listening on tcp://127.0.0.1:9000
-    Use Ctrl-C to stop
-    ~~~
+~~~
+ROOT_DIR = /home/yourusername/Projects/xml-extractor
+DATA_DIR = /home/yourusername/Projects/xml-extractor/webapp/upload
+DOCUMENTS_BASEPATH = /home/yourusername/Projects/xml-extractor/webapp/upload/pdfs
+ENABLE_DEBUG_METHODS = true
+DOCUMENTS_RELATIVEPATH = webapp/upload/pdfs
+DOCUMENTS_OUTPUTPATH = webapp/static/export
+MONGO ENDPOINT = 127.0.0.1:27017
+running under / as root URI
+Puma starting in single mode...
+ Version 3.12.0 (jruby 9.2.0.0 - ruby 2.5.0), codename: Llamas in Pajamas
+ Min threads: 0, max threads: 16
+ Environment: development
+ Listening on tcp://127.0.0.1:9000
+Use Ctrl-C to stop
+~~~
 
-For backend, I have done configuration of mongodb, you just need to do little tweak in settings.rb as per your system informations.
+For backend, I have done configuration of mongodb, you just need to do little tweak in `settings.rb` as per your system informations.
 
 The site instance should now be viewable at http://127.0.0.1:9000/
 
