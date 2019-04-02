@@ -105,7 +105,7 @@ module TabulaSettings
   DOCUMENTS_OUTPUTPATH = File.join('webapp', 'static', 'export')
 
   if ENV['RACK_ENV'] == 'production'
-    MONGODB_ENDPOINT = '54.183.42.219'
+    MONGODB_ENDPOINT = '127.0.0.1'
     MONGODB_PORT = '27017'
     DATABASE = 'xml-extractor'
     DB_USER = 'testuser'
@@ -113,7 +113,6 @@ module TabulaSettings
 
   elsif ENV['RACK_ENV'] == 'development'
     MONGODB_ENDPOINT = '127.0.0.1'
-    # MONGODB_ENDPOINT = '54.183.136.45'
     MONGODB_PORT = '27017'
     DATABASE = 'xml-extractor'
     DB_USER = 'testuser'
