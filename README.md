@@ -1,24 +1,24 @@
 
-# XML Extractor
+# PDF Extractor
 
 This tool helps you to liberate data tables trapped inside PDF files.
 
 Extremely useful tool for Data Scientist, Data Analyst and BI Analyst.
 
-## Why XML Extractor?
+## Why PDF Extractor?
 
 If you’ve ever tried to do anything with data provided to you in PDFs, you
 know how painful this is — you can’t easily copy-and-paste rows of data out
-of PDF files. **XML Extractor** allows you to extract that data in [CSV,JSON,TSV,ZIP] format, through
+of PDF files. **PDF Extractor** allows you to extract that data in [CSV,JSON,TSV,ZIP] format, through
 a simple web interface.
 
-## Using XML Extractor
+## Using PDF Extractor
 
-First, make sure you have a recent copy of Java installed. XML Extractor requires
+First, make sure you have a recent copy of Java installed. PDF Extractor requires
 a Java Runtime Environment compatible with Java 7 (i.e. Java 7, 8 or higher).
 
 
-## Running XML Extractor from source (for developers)
+## Running PDF Extractor from source (for developers)
 
 1. Install `ruby`. 
     ~~~
@@ -32,7 +32,7 @@ a Java Runtime Environment compatible with Java 7 (i.e. Java 7, 8 or higher).
 2. Install `java 7`(i.e. Java 7, 8 or higher).
 
 3. Install JRuby(JavaRuby). You can install it from its website, or using tools like
-   `rvm` or `rbenv`. XML Extractor uses the JRuby 9000 series (i.e. JRuby 9.1.5.0).
+   `rvm` or `rbenv`. PDF Extractor uses the JRuby 9000 series (i.e. JRuby 9.1.5.0).
     ~~~
       rbenv install jruby-9.2.0.0
     ~~~
@@ -40,10 +40,10 @@ a Java Runtime Environment compatible with Java 7 (i.e. Java 7, 8 or higher).
 4. Now install the Ruby dependencies. (Note: if using `rvm` or
    `rbenv`, ensure that JRuby is being used.
 
-    a). First download or clone this repository, then go to the folder `xml-extractor`
+    a). First download or clone this repository, then go to the folder `pdf-extractor`
     ~~~
-    https://github.com/vickymax/xml-extractor.git
-    cd xml-extractor
+    https://github.com/vickymax/pdf-extractor.git
+    cd pdf-extractor
 
     gem install bundler -v 1.5.0
     bundle install
@@ -67,9 +67,9 @@ a Java Runtime Environment compatible with Java 7 (i.e. Java 7, 8 or higher).
 
 **After server start, you will see all details on console:**
 ~~~
-ROOT_DIR = /home/yourusername/Projects/xml-extractor
-DATA_DIR = /home/yourusername/Projects/xml-extractor/webapp/upload
-DOCUMENTS_BASEPATH = /home/yourusername/Projects/xml-extractor/webapp/upload/pdfs
+ROOT_DIR = /home/yourusername/Projects/pdf-extractor
+DATA_DIR = /home/yourusername/Projects/pdf-extractor/webapp/upload
+DOCUMENTS_BASEPATH = /home/yourusername/Projects/pdf-extractor/webapp/upload/pdfs
 ENABLE_DEBUG_METHODS = true
 DOCUMENTS_RELATIVEPATH = webapp/upload/pdfs
 DOCUMENTS_OUTPUTPATH = webapp/static/export
@@ -95,6 +95,6 @@ The site instance should now be viewable at http://127.0.0.1:9000/
 
 Contact the developer and tell me what you tried to do that didn’t work.
 
-- [Reporting an issue](https://github.com/vickymax/xml-extractor/issues/new).
+- [Reporting an issue](https://github.com/vickymax/pdf-extractor/issues/new).
 
     
